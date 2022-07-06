@@ -1,0 +1,11 @@
+.upperContainer{
+
+}
+.button{
+    border-radius: 10px;
+    border: 0ch;
+    margin: 5px;
+    width: 5em;
+    height: 2em;
+    background-color: #c4c4c485;
+}
