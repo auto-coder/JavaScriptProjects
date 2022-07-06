@@ -10,8 +10,14 @@ function display(value) {
 
 function calculate() {
     let result = document.getElementById("input").value;
-    let q = eval(result);
-    document.getElementById("input").value = q;
+    try {
+        let q = eval(result);
+        document.getElementById("input").value = q;
+    
+    } catch (error) {
+        console.log(error);
+        document.getElementById("input").value = alert("sdfgsdfg");
+    }
 }
 function backSpace() {
     let value = document.getElementById("input").value;
@@ -23,3 +29,4 @@ function brackets() {
 function rebrackets() {
     document.getElementById("input").value+=")";
 }
+
